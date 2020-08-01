@@ -29,9 +29,10 @@ app.use(
 
 app.use(passport.initialize());
 app.use(passport.session());
+//+4!b8BvB6NHACDX
 
 mongoose.connect(
-  "mongodb+srv://admin-naman_075:+4!b8BvB6NHACDX@cluster0.unwec.mongodb.net/userDB",
+  "mongodb+srv://admin-naman_075:+4!b8BvB6NHACDX@cluster0.unwec.mongodb.net/userDB?retryWrites=true&w=majority",
   { useNewUrlParser: true, useUnifiedTopology: true }
 );
 mongoose.set("useCreateIndex", true);
